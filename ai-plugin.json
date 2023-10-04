@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Генератор графиков",
+    "name_for_model": "chartgenerator",
+    "description_for_human": "Приложение для генерации графиков с использованием QuickChart.",
+    "description_for_model": "Помогает пользователю генерировать графики с использованием QuickChart. Можно создавать графики различных типов и настраивать их параметры.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "http://localhost:5003/openapi.yaml"
+    },
+    "logo_url": "http://localhost:5003/logo.png",
+    "contact_email": "support@example.com",
+    "legal_info_url": "http://www.example.com/legal"
+}
+

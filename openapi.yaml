@@ -1,0 +1,60 @@
+openapi: 3.0.1
+info:
+  title: Генератор графиков API
+  description: API для генерации графиков.
+  version: '1.0.0'
+servers:
+  - url: http://localhost:5003
+paths:
+  /charts:
+    post:
+      operationId: generateChart
+      summary: ГSure! Here's an example OpenAPI definition for your application based on the provided documentation:
+
+```yaml
+openapi: 3.0.1
+info:
+  title: Генератор графиков API
+  description: API для генерации графиков.
+  version: '1.0.0'
+servers:
+  - url: http://localhost:5003
+paths:
+  /charts:
+    post:
+      operationId: generateChart
+      summary: Генерация графика
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChartRequest'
+      responses:
+        '200':
+          description: Успешный запрос
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChartResponse'
+components:
+  schemas:
+    ChartRequest:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Тип графика (line, bar, pie и т.д.)
+        data:
+          type: object
+          description: Данные для отображения на графике
+        options:
+          type: object
+          description: Дополнительные параметры для настройки графика
+    ChartResponse:
+      type: object
+      properties:
+        image_url:
+          type: string
+          format: uri
+          description: URL изображения с сгенерированным графиком
